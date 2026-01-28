@@ -21,11 +21,45 @@
                  console.log("the number is"   + number);
                 }
         }
+
+        let x = [1,2,3,4,5];
+
+      document.addEventListener("dblclick", function dblclick(){
+               console.log("clicked");
+               alert("please doubleclicked")
+               const confr = confirm("Are you sure ?");
+               console.log(confr);
+               // aama confirm ma evu thay ke tame cancel karo to false return kare ok karo to true return kare 
+        })
+
+        const txt = "react.jstutorial"
+        const result = txt.substr(0,8);
+        console.log(result);
+        console.log(txt.length);
+        console.log(txt.includes("r"));
+        let i = [1,2,3,4,5,6,7,8,9,10,11,12];
+         
+       for(i = 0; i <= 12; i++ ){
+                 console.log(i); 
+       }
+        array.push(1,2,3); // pachal element add kare
+        array.pop(); // pacahl element remove kare
+        console.log(array);
+
+        array.forEach(element => {
+            
+        });
+        
+                
+        
+        
+
+        
     </script>
+    <!--<button ondblclick="alert('Clicked')">Click</button>-->
+
 </head>
 <body>
-
-    <p>hello <span color="bg-red">world</span></p>
-    <p>I am learning js</p>
+   <h1>I am learning js </h1>
 </body>
 </html>
