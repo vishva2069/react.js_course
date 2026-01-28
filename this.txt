@@ -1,0 +1,12 @@
+-> react is a one mainly javascript library.. this is a use for react user interface
+-> userinterface etle je aapde joi sakiye chiye tene use kari sakiye chiye tey
+-> jem ke links, button, image, text, icon, menu, inputbox, form, checkbox, dropdown,slidebar, navbar, slidebar, links, tabs
+-> userinterface website ma home page login design,login form, product cards,searchbar
+
+main feactures
+
+component - based architecture
+virtual dom for fast rendering
+declarative userinterface
+resusable code
+
