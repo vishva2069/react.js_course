@@ -1,0 +1,26 @@
+-> react.js is a one javascript library . tema teno use user interface mate thay che
+-> userinterface etle jene aapde joi sakiye chiye ane tene use kari sakiye chiye
+-> tena amuk elements hoi che jema kam thay che button,text,image,icon,button,menu,input box,form,checkbox,dropdown,slider,navbar,slidebar,links
+ tabs 
+
+ website ma user inteface su use thay che
+
+ - home page login
+ - login form
+ - product cards
+ - search bar
+
+ app ma user interface
+
+ - touch screen
+ - swipe,top
+ - icons, layouts
+
+ main feactures
+
+ - component - based architecture
+ - virtual dom for fast rendering
+ - declarative userinterface
+ - resusable code
+
+ react nu second name - SPA = single page appilcation
