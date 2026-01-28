@@ -18,9 +18,47 @@
 
  main feactures
 
- - component - based architecture
+ - app-jsx component - based architecture
  - virtual dom for fast rendering
  - declarative userinterface
  - resusable code
 
  react nu second name - SPA = single page appilcation
+ 
+ react nu ek folder banavanu
+
+ == npx create-react-app my-app
+ tema node modules public src package json badhu ja aave
+
+
+ 🌍 public
+
+Ye direct browser me load hota hai
+
+Isme hota hai:
+
+index.html
+images
+favicon
+
+👉 Browser sabse pehle yahin se React app start karta hai
+
+⚛️ src (MOST IMPORTANT ❤️)
+
+💯 Real React yahin likhte ho
+
+Isme hota hai:
+
+App.js / App.jsx → main component
+index.js / main.jsx → React start point
+CSS files
+Components
+
+👉 90% kaam src ke andar hota hai
+
+        Numbers
+        objects
+        bolleans - true or false
+        String
+        undefined
+        null
