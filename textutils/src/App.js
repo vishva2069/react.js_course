@@ -3,23 +3,32 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className="blank">Vishva Pansuriya
+       <nav className="details">
+ 
+     <ul> Display Page
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+     </ul>
+      </nav>
+
+      <div className="container">
+        how to types into objects of creaption to lightelly
+        be using to all of creations
+      </div>
+     
+     <h1 className="paragraph">
+      class high to creations
+     </h1>
+      
+
+     </div>
+    
+     
   );
+
+
 }
 
 export default App;
