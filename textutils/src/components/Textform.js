@@ -7,6 +7,10 @@ const handleclear = () => {
   setText(" ");
   
 }
+
+const [on,seton] = useState(true);
+
+
   const handleLoclick =() => {
     console.log("lowercase was clicked" + text);
     let newText = text.toLowerCase();
@@ -37,22 +41,28 @@ const handleclear = () => {
 
       <button className="btn btn-success mx-1" onClick={handleUpclick} >convert uppercase</button>
       <button className="btn btn-success mx-2" onClick={handleLoclick} >convert lowercase </button>
-      <button className="btn btn-success mx-2" onClick={handleclear} >clear text</button>
+      <button className="btn btn-success mx-2"  onClick={handleclear} >clear text</button>
 
 
       </div>
+
+
 
       <div className="container my-3">
         <h1>Your text summary</h1>
         <p>{text.split(" ").length}  words and {text.length} characters</p>
         <p>{0.001 * text.split("   ").length }minutes readable</p>
-      </div><br />
+      </div>
 
       <div>
         <h3>Preview</h3>
         <p>
         {text}
         </p>
+
+        <h2>Light is{on? "on" : "off"}</h2>
+        <button className="button" onClick={() => seton(!on)}>Switch</button>
+
       </div>
 </>
   )
