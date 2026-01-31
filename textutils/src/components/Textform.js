@@ -5,6 +5,7 @@ import React ,{useState} from 'react';
 const handleclear = () => {
   console.log("clear" + text);
   setText(" ");
+  
 }
   const handleLoclick =() => {
     console.log("lowercase was clicked" + text);
