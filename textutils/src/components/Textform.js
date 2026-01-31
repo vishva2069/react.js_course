@@ -1,38 +1,29 @@
-import React,{useState} from 'react';
+import React ,{useState} from 'react';
 
+ export default function TextForm(props) {
 
-export default function Textform(props) {
-  const [text, setText] = useState('set name text here');
-  text("vishva pansuriya");
-  setText("basic concept");
-  
-  const handleChange = (event) => {
+  const handleUpclick = () =>{
+     console.log("uppercase was clicked" + text);
+     let newText = text.toUpperCase();
+     setText(newText);
+  }
+
+  const handleonChange = (event) =>{
+    console.log("on change");
     setText(event.target.value);
-  };
 
-  return (
-    <>
-    <h1>{props.heading}</h1>
-   <div className="mb-3">
-    <h3>Message Box</h3>
-    <div className="mb-2">
- 
-   <label className="form-label"> Your message</label>
+ }
+  const [text, setText] = useState('Enter Text Here');
+ /*  text ="to creation";// wrong way
+  setText("new text");// corecet */
+  return(<>
 
-    <textarea 
-    className="form-control" 
-    value={text}
-    onChange={handleChange}
-    placeholder="write your message here"
-    rows="5"><br />
-     </textarea>
-     </div>
+    <div className="mb-3">
+      <h1>{props.heading}</h1>
+      <textarea className="form-control" value={text} onChange={handleonChange} id="mybox" rows="8"></textarea>
+    </div>
 
-     <button className="btn btn-primary">submit</button>
-     
-   </div>
-    </>
+      <button className="btn btn-primary" onClick={handleUpclick}  >submit</button>
+</>
   )
 }
-
-
