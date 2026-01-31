@@ -31,13 +31,17 @@ export default function Navbar(props) {
   </div>
 </nav>
 
-  
 </>
     
   );
 }
 
 Navbar.propTypes = {
-  title : PropTypes.string, 
-  aboutext : PropTypes.string
+  title : PropTypes.string.isRequired, 
+  aboutext : PropTypes.string.isRequired
 }
+
+Navbar.defultprops ={
+  title : 'set title here',
+  aboutext : 'about text here'
+};
