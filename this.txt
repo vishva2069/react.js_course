@@ -62,3 +62,89 @@ Components
         String
         undefined
         null
+
+ ****************************   HOOKS    **************************** 
+
+        1..usestate :-
+
+        value change thay tyare
+        // state value store karva mate
+
+        const [state, setState] = useState(initialValue);
+
+        example:-
+        const [count, setCount] = useState(0);
+
+        2..useEffect :- 
+        Jab component load ho 
+        sideeffects/lifecycle
+
+        useEffect(() => {
+        // code
+         }, [dependency]);
+      
+        ex:-
+
+           (() => {
+        console.log("Component loaded");
+        }, []);
+
+        4..usecontext :-
+
+    👉 Global data use karne ke liye  
+
+        const value = useContext(MyContext);
+            ex:-
+        const user = useContext(UserContext);
+
+        5..useRef :-
+        DOM access / value store (no re-render)
+
+        const ref = useRef(initialValue);
+
+        example:- 
+        const inputRef = useRef();
+
+        6..useReducer
+        
+        jab bahut saari state ho
+        rules ke hisaab se change karni ho
+
+        👉 Complex state handle
+
+        const [state, dispatch] = useReducer(reducer, initialState);
+        
+        example:-
+        const [state, dispatch] = useReducer(myReducer, { count: 0 });
+
+        7..usecallback
+        function bar-bar na bane
+        function ko memoize karna
+
+        const memoFn = useCallback(() => {
+        // function code
+        }, [dependency]);
+
+        ex:-
+          const handleClick = useCallback(() => {
+          console.log("Clicked");
+          }, []);
+
+        8..useLayoutEffect
+
+         useLayoutEffect(() => {
+         // code
+           }, []);
+         
+        9..useImperativeHandle
+
+
+ 
+
+
+
+
+
+
+
+
