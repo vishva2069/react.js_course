@@ -6,24 +6,22 @@ import React,{useState} from 'react';
 
 
 
-
- 
 function App() {
   const [mode, setMode] = useState('light');
-  
-  
 
 
-  
+
+
   const togglemode = () => {
    if (mode === 'light') {
       setMode('dark');
      document.body.style.backgroundColor = '#04273';
     
+    
    } else {
       setMode('light');
      document.body.style.backgroundColor = 'white';
-
+     
    }
 }
   return(
@@ -38,6 +36,7 @@ function App() {
   <TextForm heading="Enter the text to analyze" />
   </div>
   <About className="container"/>
+
  
 
  
