@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';//rfce
 import React,{useState} from 'react';
+import Alert from './components/Alert';
 
 
 
@@ -33,7 +34,7 @@ function App() {
  {/* /*  <Navbar/>
   <Navbar title="Textutils" /> */ }
 
-
+ <Alert/>
  <div className="container my-3">
   <TextForm heading="Enter the text to analyze" />
   </div>
