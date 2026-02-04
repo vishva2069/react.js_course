@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 //${props.mode=== 'light'? 'dark' : 'light'} isme dark kare to white white kare to dark.
 
 export default function Navbar(props) {
-  props.showAlert("Dark mode enabled", "success");
+ 
   return (
     <>
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
@@ -29,7 +29,7 @@ export default function Navbar(props) {
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
 
-        <div className={`form-check form-switch text-${props.mode=== 'light'? 'dark' : 'light'} `}>
+        <div className={`form-check form-switch text-${props.mode=== 'black'? 'dark' : 'grey'} `}>
             <input className="form-check-input"  onClick={props.togglemode}type="checkbox" role="switch" id="switchCheckDefault" />
             <label className="form-check-label"  htmlFor="switchCheckDefault" script="light">Darkmode</label>
              </div>
