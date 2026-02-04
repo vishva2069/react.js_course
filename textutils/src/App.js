@@ -9,6 +9,7 @@ import Alert from './components/Alert';
 
 function App() {
   const [mode, setMode] = useState('light');
+  const [alert, setalert] = useState(null);
 
   const togglemode = () => {
    if (mode === 'light') {
@@ -34,7 +35,7 @@ function App() {
  {/* /*  <Navbar/>
   <Navbar title="Textutils" /> */ }
 
- <Alert/>
+ <Alert alert="this is a alert"/>
  <div className="container my-3">
   <TextForm heading="Enter the text to analyze" />
   </div>
