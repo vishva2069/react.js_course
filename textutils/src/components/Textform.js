@@ -9,12 +9,15 @@ const [on,setOn] = useState(true);
     console.log("lowercase was clicked" + text);
     let newText = text.toLowerCase();
     setText(newText);
+    props.showAlert("converted to lowercase!","success");
    
   }
   const handleUpclick = () =>{
      console.log("uppercase was clicked" + text);
      let newText = text.toUpperCase();
      setText(newText);
+     props.showAlert("converted to uppercase!","success");
+
      
   }
 
