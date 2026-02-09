@@ -42,25 +42,23 @@ function App() {
 
    }
 }
-  return(
+  return(   
  <>
  <Router>
-  <Navbar title="Textutils" aboutext="about us " mode={mode} togglemode={togglemode} />
+  <Navbar title="Textutils" aboutext="about" mode={mode} togglemode={togglemode} />
  {/* /*  <Navbar/>
   <Navbar title="Textutils" /> */ }
  
  <Alert alert={alert}/>
  <div className="container my-3">
+   {/*./users.-->.Component-1 
+   /users/home.-->.-->.component.2 */}
      <Routes >
-      <Route path="/" 
+      <Route exact path="/" 
        element= {<TextForm heading="Enter the text to analyze" showAlert={showAlert} />} />
-      
-  
-      <Route path="/about" 
-       element= {<About/>} />
+
 </Routes>
-  
-{/*   <About className="container"/> */}
+   <About className="container"/>
   </div>
  </Router>
 </>

@@ -138,7 +138,13 @@ Components
          
         9..useImperativeHandle
 
+
 - -> Router React me wo system hai jo URL ke according page (component) change karta hai bina page reload kiye.
+
+Normal website ma page change karo to browser new page load kare.
+React ma page reload thaya vagar screen change thay – aa kaam React Router kare.
+
+
 
  
 
