@@ -139,11 +139,39 @@ Components
         9..useImperativeHandle
 
 
+        jsx= javascript with xml -jsx
+
+        jsx expressions :-
+
+        jyare aapde kaik component banavyo hoy tyare tene new file ma import karvanu and functions ma return kari ne lakhi ne 
+        index.html ma click karvanu etle ee jsx expressions
+
+        jsx attribuets :-
+
+        click,dbclick,mouseup,evnt....
+
+        class Components:-
+
+        1️⃣ Class – component define karta hai
+        2️⃣ State – component ka data store karta hai
+
+
+
+****************************react router*****************************************
+
 - -> Router React me wo system hai jo URL ke according page (component) change karta hai bina page reload kiye.
 
 Normal website ma page change karo to browser new page load kare.
 React ma page reload thaya vagar screen change thay – aa kaam React Router kare.
 
+******************************lifecycle**************************************
+
+1. Mounting phase
+
+- intial setup
+
+2. Updating phase
+3. unmounting phase
 
 
  
