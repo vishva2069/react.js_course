@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vishva2069/react.js_course/tree/main/textutils/static/css/main.dc4d6ff2.css",
+    "main.js": "/vishva2069/react.js_course/tree/main/textutils/static/js/main.a56b856a.js",
+    "static/js/453.0547c99f.chunk.js": "/vishva2069/react.js_course/tree/main/textutils/static/js/453.0547c99f.chunk.js",
+    "index.html": "/vishva2069/react.js_course/tree/main/textutils/index.html",
+    "main.dc4d6ff2.css.map": "/vishva2069/react.js_course/tree/main/textutils/static/css/main.dc4d6ff2.css.map",
+    "main.a56b856a.js.map": "/vishva2069/react.js_course/tree/main/textutils/static/js/main.a56b856a.js.map",
+    "453.0547c99f.chunk.js.map": "/vishva2069/react.js_course/tree/main/textutils/static/js/453.0547c99f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4d6ff2.css",
+    "static/js/main.a56b856a.js"
+  ]
+}
