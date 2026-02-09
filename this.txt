@@ -169,10 +169,26 @@ React ma page reload thaya vagar screen change thay – aa kaam React Router kar
 1. Mounting phase
 
 - intial setup
+- setup
+- api call
 
 2. Updating phase
+
+-state change ho
+-props change ho
+
+work 
+ - ui update
+ - data change handle
+
 3. unmounting phase
 
+- Screen se remove ho jata hai
+
+work:-
+cleanup
+timer stop
+event remove
 
  
 
