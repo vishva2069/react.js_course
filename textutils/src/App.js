@@ -20,7 +20,7 @@ function App() {
 /*   const [isOpen, setIsOpen] = useState(false); */
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
-  const [count, setCount] = useEffect(10);
+  const [count, setCount] = useEffect(0);
 
   const [color, setColor] = useState("White");
 
@@ -55,9 +55,9 @@ function App() {
 
 useEffect(()=> {
   setTimeout(()=>{
-    setCount((count) => count +10);
-  },1500);
-})
+    setCount((count) => count +10);  
+  },1000);
+});
 
   return(   
  <>
@@ -95,6 +95,7 @@ useEffect(()=> {
  */}
 
  <h1>i ve perferct timing {count}! </h1>
+
      <div className='container text-center my-3'
       style={{
         padding: '20px',
