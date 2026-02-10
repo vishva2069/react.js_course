@@ -1,8 +1,10 @@
 import React ,{useState} from 'react';
 
+
  export default function TextForm(props) {
                                                      
 const [on,setOn] = useState(true);
+
 
 
   const handleLoclick =() => {
@@ -74,11 +76,16 @@ const [on,setOn] = useState(true);
           <button className="button" onClick={() => setOn(!on)}>
             Switch
           </button>
+          
+          
         </div>
       </div>
+
+
     </>
   );
  }  
+
 
 
 
