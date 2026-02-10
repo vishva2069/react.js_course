@@ -19,3 +19,4 @@ function PortalButton({ onClick, children }) {
     );
   }
   
+  export default PortalButton;

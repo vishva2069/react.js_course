@@ -6,7 +6,8 @@ import React,{useState} from 'react';
 /* import Modal from './components/Modal'; */
 import Alert from './components/Alert';
 import PortalButton from './components/PortalButton';
-
+import { Suspense } from 'react';
+import MyFruits from './components/Fruits';
 import {
    BrowserRouter as Router,
    Routes,
@@ -19,6 +20,9 @@ function App() {
 /*   const [isOpen, setIsOpen] = useState(false); */
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
+
+  const [color, setColor] = useState("White");
+
   const showAlert = (message, type) =>{
    setAlert({
       msg: message,
@@ -50,18 +54,16 @@ function App() {
 
   return(   
  <>
-   
-
  <Router>
   <Navbar title="Textutils" aboutext="about" mode={mode}  togglemode={togglemode} />
-{/*  <Navbar title="textutils"/> */}
+
  <Alert alert={alert}/>
  <div className="container my-3">
    {/*./users.-->.Component-1 
    /users/home.-->.-->.component.2 */}
      <Routes >
       <Route path="/" element=
-      { <TextForm heading="Enter the text to analyze" showAlert={showAlert} mode={mode}/> }/>
+      { <TextForm heading="Enter the text to analyze" showAlert={showAlert}/> }/>
        <Route path="/about" element={<About />} />
 </Routes>
    
@@ -84,7 +86,7 @@ function App() {
  
      </div> 
  */}
-     <div
+     <div className='container text-center my-3'
       style={{
         padding: '20px',
         border: '2px solid black',
@@ -106,6 +108,31 @@ function App() {
         }}>
         Floating Button
       </PortalButton>
+    </div>
+
+    <div >
+      <Suspense className='container text-center my-3' fallback={<div>Loading......</div>}>
+         <MyFruits/>
+      </Suspense>
+    </div>
+  <div>
+
+    <h1> My color is {color}</h1>
+    <button type="button" onDoubleClick={() => setColor("Blue")}>
+        Blue
+    </button>
+
+    <button type="button" onDoubleClick={() => setColor("White")}>
+        White
+    </button>
+
+    <button type="button" onDoubleClick={()=> setColor("Pink")}>
+        Pink
+    </button>
+
+    <button type="button" onDoubleClick={() => setColor("Green")}>
+        Green
+    </button>
     </div>
 </>
 );
