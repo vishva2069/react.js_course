@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';//rfce
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 /* import Modal from './components/Modal'; */
 import Alert from './components/Alert';
 import PortalButton from './components/PortalButton';
@@ -20,6 +20,7 @@ function App() {
 /*   const [isOpen, setIsOpen] = useState(false); */
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
+  const [count, setCount] = useEffect(10);
 
   const [color, setColor] = useState("White");
 
@@ -51,6 +52,12 @@ function App() {
 
    }
 }
+
+useEffect(()=> {
+  setTimeout(()=>{
+    setCount((count) => count +10);
+  },1500);
+})
 
   return(   
  <>
@@ -86,6 +93,8 @@ function App() {
  
      </div> 
  */}
+
+ <h1>i ve perferct timing {count}! </h1>
      <div className='container text-center my-3'
       style={{
         padding: '20px',
@@ -115,7 +124,7 @@ function App() {
          <MyFruits/>
       </Suspense>
     </div>
-  <div>
+  <div  className='container text-center my-3'>
 
     <h1> My color is {color}</h1>
     <button type="button" onDoubleClick={() => setColor("Blue")}>
