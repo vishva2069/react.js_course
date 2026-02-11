@@ -71,7 +71,9 @@ Components
         // state value store karva mate
 
         const [state, setState] = useState(initialValue);
-
+                 
+               state       updated 
+              variable    function
         example:-
         const [count, setCount] = useState(0);
 
@@ -190,7 +192,43 @@ cleanup
 timer stop
 event remove
 
+👉 useState = Data store karva mate
+
+Value ne store kare
+
+Value change thay to component re-render thay
+
+UI update thay
+
+useEffect :------
+
+API call
+Timer
+Console log
+DOM change
+Event listener
+
+class component 
+
+class MyComponent extends React.Component {
+   render() {
+      return <h1>Hello</h1>
+   }
+}
  
+functional component
+
+function MyComponent() {
+   return <h1>Hello</h1> 
+}
+
+Point	   Functional	   Class
+Syntax     	function	          class
+State	     useState	    this.state
+Effect     	useEffect	  lifecycle methods
+this      keyword          	Nathi	Jaruri
+Code      Length	          Short	Thodu lambo
+Modern React     	✅ Use thay che	          ❌ Rare use
 
 
 

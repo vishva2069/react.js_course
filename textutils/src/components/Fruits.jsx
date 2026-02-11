@@ -14,14 +14,14 @@ function fetchFruitData() {
     }
   };
 
-  function MyFruits() {
+  function MyFruits()  {
     const fruits = fruitResource.read();
     return (
       <>
-        <h2>My Favorite Fruits</h2>          
-        <ul>
+        <h2  className='container text-center my-3'>My Favorite Fruits</h2>          
+        <ul className='container text-center my-3'>
           {fruits.map((fruit, index) => (
-            <li key={index}>{fruit}</li>
+            <li className='container text-center my-3' key={index}>{fruit}</li>
           ))}
         </ul>
       </>

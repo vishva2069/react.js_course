@@ -2,12 +2,13 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import About from './components/About';//rfce
-import React,{useEffect, useState} from 'react';
+import React,{useEffect,useState} from 'react';
 /* import Modal from './components/Modal'; */
 import Alert from './components/Alert';
 import PortalButton from './components/PortalButton';
 import { Suspense } from 'react';
 import MyFruits from './components/Fruits';
+
 import {
    BrowserRouter as Router,
    Routes,
@@ -20,7 +21,7 @@ function App() {
 /*   const [isOpen, setIsOpen] = useState(false); */
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
-  const [count, setCount] = useEffect(0);
+  const [count, setCount] = useState(10);
 
   const [color, setColor] = useState("White");
 
@@ -52,11 +53,10 @@ function App() {
 
    }
 }
-
-useEffect(()=> {
-  setTimeout(()=>{
-    setCount((count) => count +10);  
-  },1000);
+useEffect(() => {
+  setTimeout(() => {
+    setCount((count) => count + 1);
+  }, 1000);
 });
 
   return(   
@@ -94,7 +94,7 @@ useEffect(()=> {
      </div> 
  */}
 
- <h1>i ve perferct timing {count}! </h1>
+ 
 
      <div className='container text-center my-3'
       style={{
@@ -125,6 +125,9 @@ useEffect(()=> {
          <MyFruits/>
       </Suspense>
     </div>
+    
+    <h1>I've rendered {count} times!</h1>;
+
   <div  className='container text-center my-3'>
 
     <h1> My color is {color}</h1>
@@ -144,6 +147,7 @@ useEffect(()=> {
         Green
     </button>
     </div>
+ 
 </>
 );
    };
