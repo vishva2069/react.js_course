@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types';
 /* import { Link } from 'react-router-dom';
  */
-// jyare biji file ma aapde js ni file banavyi hoy tyare coonect karva mate pela ma classNamename ka
+// jyare biji file ma aapde js ni file banavyi hoy tyare connect karva mate pela ma classNamename ka
 // title nakheshu to ahiya pachu curly braces ma mukvanu etle ee thay jashe
 //${props.mode=== 'light'? 'dark' : 'light'} isme dark kare to white white kare to dark.
 
-export default function Navbar(props) {
+ function Navbar(props) {
  
   
   return (
@@ -54,3 +54,5 @@ Navbar.defultprops ={
   title : 'set title here',
   aboutext : 'about text here'
 };
+
+export default Navbar;

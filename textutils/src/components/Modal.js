@@ -2,7 +2,7 @@
 
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) return null;
-Ā
+
   return createPortal(
     <div style={{
       position: 'fixed',
@@ -15,11 +15,13 @@ function Modal({ isOpen, onClose, children }) {
       alignItems: 'center',
       justifyContent: 'center'
     }}>
+
       <div style={{
         background: 'white',
         padding: '20px',
         borderRadius: '8px'
       }}>
+
         {children}
         <button onClick={onClose}>Close</button>
       </div>

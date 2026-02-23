@@ -1,7 +1,6 @@
 import React ,{useState} from 'react';
 
-
- export default function TextForm(props) {
+ function TextForm(props) {
                                                      
 const [on,setOn] = useState(true);
 
@@ -29,8 +28,9 @@ const [on,setOn] = useState(true);
 
  }
   const [text, setText] = useState('Enter Text Here');
- /*  text ="to creation";// wrong way
-  setText("new text");// corecet */
+
+
+
   return (
     <>
       <div className="container" style={{
@@ -86,7 +86,7 @@ const [on,setOn] = useState(true);
   );
  }  
 
-
+export default TextForm;
 
 
 

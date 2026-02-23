@@ -9,6 +9,7 @@ import PortalButton from './components/PortalButton';
 import { Suspense } from 'react';
 import MyFruits from './components/Fruits';
 
+
 import {
    BrowserRouter as Router,
    Routes,
@@ -32,6 +33,12 @@ function App() {
       
    })
   }
+
+  const timer = setTimeout(() => {
+    console.log("This will not run");
+  }, 3000);
+  
+  clearTimeout(timer);
 
   const togglemode = () => {
    if (mode === 'light') {
@@ -73,7 +80,7 @@ useEffect(() => {
       { <TextForm heading="Enter the text to analyze" showAlert={showAlert}/> }/>
        <Route path="/about" element={<About />} />
 </Routes>
-   
+  
   </div>
  </Router>
 {/*  <div className='container text-center my-3'>
@@ -125,7 +132,7 @@ useEffect(() => {
          <MyFruits/>
       </Suspense>
     </div>
-    
+
     <h1>I've rendered {count} times!</h1>;
 
   <div  className='container text-center my-3'>
